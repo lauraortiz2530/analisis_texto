@@ -4,18 +4,18 @@ Este repositorio contiene un script de Python para realizar un análisis de Proc
 
 ## 1. Fuentes de Datos
 
-Los textos analizados (`tu 160.txt` y `b2 spirit.txt`) fueron extraídos de las siguientes páginas de Wikipedia:
+Los textos analizados (tu 160.txt y b2 spirit.txt) fueron extraídos de las siguientes páginas de Wikipedia:
 
 * **Túpolev Tu-160:** [https://es.wikipedia.org/wiki/Túpolev_Tu-160](https://es.wikipedia.org/wiki/Túpolev_Tu-160)
 * **Northrop Grumman B-2 Spirit:** [https://es.wikipedia.org/wiki/Northrop_Grumman_B-2_Spirit](https://es.wikipedia.org/wiki/Northrop_Grumman_B-2_Spirit)
 
 ## 2. Metodología
 
-El análisis se realiza en un único script de Python (`analisis_texto.py` o similar) y sigue una metodología estándar de minería de textos:
+El análisis se realiza en un único script de Python (analisis_texto.py o similar) y sigue una metodología estándar de minería de textos:
 
-1.  **Carga y Limpieza:** Los archivos `.txt` se cargan desde una ruta local. Se aplica una función de normalización robusta para eliminar ruido (etiquetas ``, citaciones `[3]`, puntuación, números y espacios extra).
+1.  **Carga y Limpieza:** Los archivos .txt se cargan desde una ruta local. Se aplica una función de normalización robusta para eliminar ruido (etiquetas ``, citaciones [3], puntuación, números y espacios extra).
 2.  **Análisis Descriptivo Básico:** Se realiza un conteo inicial de párrafos, frases y palabras para comparar la longitud y estructura de ambos textos.
-3.  **Procesamiento con `spaCy`:**
+3.  **Procesamiento con spaCy:**
     * Tokenización
     * Eliminación de *Stopwords* (palabras comunes)
     * Lematización (reducción de palabras a su raíz)
@@ -33,7 +33,7 @@ El análisis reveló diferencias narrativas fundamentales entre los dos textos, 
 
 3.  **Identidad Descriptiva: "Pesado" vs. "Caro":** Los adjetivos definen la identidad de cada avión. El Tu-160 es "supersónico", "grande" y "pesado". El B-2 es "furtivo", "caro" y "negro" (proyecto secreto).
 
-4.  **Actores: Máquina (Tu-160) vs. Política (B-2):** Las relaciones SVO del Tu-160 describen la máquina ("El Tu-160 tiene..."). Las del B-2 revelan la burocracia detrás de él, siendo una relación clave: `(Congreso, aprobar, compra)`.
+4.  **Actores: Máquina (Tu-160) vs. Política (B-2):** Las relaciones SVO del Tu-160 describen la máquina ("El Tu-160 tiene..."). Las del B-2 revelan la burocracia detrás de él, siendo una relación clave: (Congreso, aprobar, compra).
 
 5.  **Narrativa: Historia Exhaustiva (Tu-160) vs. Controversia (B-2):** El texto del Tu-160 es significativamente más largo, buscando ser una historia completa. El del B-2 es una narrativa más corta y enfocada, centrada en la controversia de su costo y su desarrollo secreto.
 
