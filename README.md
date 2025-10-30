@@ -43,5 +43,7 @@ El análisis reveló diferencias narrativas fundamentales entre los dos textos, 
 
 El script requiere las siguientes bibliotecas de Python:
 -spacy
+
 -wordcloud
+
 -matplotlib
