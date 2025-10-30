@@ -42,8 +42,6 @@ El análisis reveló diferencias narrativas fundamentales entre los dos textos, 
 ### Dependencias
 
 El script requiere las siguientes bibliotecas de Python:
-
-```bash
-pip install spacy
-pip install wordcloud
-pip install matplotlib
+spacy
+wordcloud
+matplotlib
